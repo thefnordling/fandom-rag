@@ -21,7 +21,7 @@ flowchart TD
     D --> E[5. Collect user prompt, calculate prompt embeddings, retrieve similar chunks]
     E --> F[6. Construct LLM prompt with user question and relevant chunks]
     F --> G[7. Test and validate workflow, generalize for any fandom wiki]
-    G --> H[8. Build API service for RAG workflow (OpenWebUI integration)]
+    G --> H[8. Build API service for RAG workflow - OpenWebUI integration]
 ```
 
 This project is implemented with python scripts.  To get started, clone this repo, create a virtual environment and install the requirements with pip.
