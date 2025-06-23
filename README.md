@@ -13,17 +13,6 @@ My plan broke down the project into the following steps:
 7) Test and validate the approach above with some simple shell scripts, and once i was happy with the behavior - make everything generic so instead of only being able to run for the clair obscur wiki, it would work for any fandom wiki at all. 
 8) Build a wrapper around the entire process - a service that would expose the functionality as an api for the RAG workflow to be accessed from my OpenWeb UI instance.
 
-```mermaid
-flowchart TD
-    A[1. Download all wiki pages] --> B[2. Convert pages to LLM-friendly format]
-    B --> C[3. Chunk content & calculate embeddings]
-    C --> D[4. Store embeddings, text, and metadata in vector DB]
-    D --> E[5. Collect user prompt, calculate prompt embeddings, retrieve similar chunks]
-    E --> F[6. Construct LLM prompt with user question and relevant chunks]
-    F --> G[7. Test and validate workflow, generalize for any fandom wiki]
-    G --> H[8. Build API service for RAG workflow - OpenWebUI integration]
-```
-
 This project is implemented with python scripts.  To get started, clone this repo, create a virtual environment and install the requirements with pip.
 
 ```
